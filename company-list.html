@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sponnect 기업 목록</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="checker" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html">Spon<span>nect</span></a>
+    <nav class="links" aria-label="사이트 메뉴">
+      <a href="companies.html">기업</a>
+      <a href="company-list.html" aria-current="page">기업 목록</a>
+      <a href="students.html">학생 팀</a>
+      <a href="team-list.html">팀 목록</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">문의</a>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <div class="eyebrow">기업 목록</div>
+    <h1>학생 팀을 찾는<br>기업들</h1>
+    <p class="lede">최상단 표시권을 구매한 기업이 먼저 보입니다. 그 아래는 사이트에 등록만 한 기업입니다.</p>
+  </div>
+
+  <section>
+    <div class="eyebrow">최상단 표시 · 5자리</div>
+    <h2>Featured</h2>
+
+    <!-- 자리가 팔리면 아래 .card.open 한 장을 이 템플릿으로 교체하세요.
+    <article class="card">
+      <span class="pin">최상단 표시</span>
+      <div class="name">기업명</div>
+      <div class="meta">업종 · 지역</div>
+      <p>한두 줄 소개.</p>
+      <a class="go" href="contact.html">제안 보내기 →</a>
+    </article>
+    -->
+
+    <div class="featured">
+      <article class="card open">
+        <span class="pin">판매 중</span>
+        <div class="name">Slot 01</div>
+        <div class="meta">최상단 표시권</div>
+        <p>기업 목록 맨 위 다섯 자리 중 하나입니다.</p>
+        <a class="go" href="contact.html">자리 문의 →</a>
+      </article>
+      <article class="card open">
+        <span class="pin">판매 중</span>
+        <div class="name">Slot 02</div>
+        <div class="meta">최상단 표시권</div>
+        <p>기업 목록 맨 위 다섯 자리 중 하나입니다.</p>
+        <a class="go" href="contact.html">자리 문의 →</a>
+      </article>
+      <article class="card open">
+        <span class="pin">판매 중</span>
+        <div class="name">Slot 03</div>
+        <div class="meta">최상단 표시권</div>
+        <p>기업 목록 맨 위 다섯 자리 중 하나입니다.</p>
+        <a class="go" href="contact.html">자리 문의 →</a>
+      </article>
+      <article class="card open">
+        <span class="pin">판매 중</span>
+        <div class="name">Slot 04</div>
+        <div class="meta">최상단 표시권</div>
+        <p>기업 목록 맨 위 다섯 자리 중 하나입니다.</p>
+        <a class="go" href="contact.html">자리 문의 →</a>
+      </article>
+      <article class="card open">
+        <span class="pin">판매 중</span>
+        <div class="name">Slot 05</div>
+        <div class="meta">최상단 표시권</div>
+        <p>기업 목록 맨 위 다섯 자리 중 하나입니다.</p>
+        <a class="go" href="contact.html">자리 문의 →</a>
+      </article>
+    </div>
+    <p class="note">최상단 표시권은 시즌 단위로 판매하며 동시에 다섯 곳까지만 노출합니다.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">등록 기업</div>
+    <h2>Registered</h2>
+    <p class="lede">표시권 없이 등록한 기업입니다. 기업명과 분야, 간단한 정보만 공개합니다.</p>
+
+    <!-- 등록 기업이 늘면 <tr> 한 줄씩 추가하세요. 아래는 자리를 보여 주는 예시 행이며, 실제 기업으로 교체하거나 지우세요. -->
+    <table class="roster">
+      <caption>등록 순서대로 표시합니다. 노출 순서를 올리려면 최상단 표시권이 필요합니다.</caption>
+      <thead>
+        <tr><th scope="col">기업명</th><th scope="col">분야</th><th scope="col">간단 정보</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>기업명 (예시)</td><td>센서 · 라이다</td><td>자율주행 인지 센서 공급, 장비 현물 후원 희망</td></tr>
+        <tr><td>기업명 (예시)</td><td>배터리 · 전원</td><td>전기 포뮬러 배터리팩, 캠퍼스 세미나 관심</td></tr>
+        <tr><td>기업명 (예시)</td><td>클라우드 · GPU</td><td>학습용 서버 크레딧 제공 가능</td></tr>
+        <tr><td>기업명 (예시)</td><td>가공 · 소재</td><td>차체 부품 가공 지원, 수도권 소재</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="cta-strip">
+    <p>맨 위에서 먼저 보이고 싶으세요?</p>
+    <a class="btn primary" href="contact.html">표시권 문의</a>
+  </section>
+
+  <footer>
+    <span>© 2026 Sponnect · Seoul</span>
+    <span>sponconnect@gmail.com</span>
+  </footer>
+</div>
+</body>
+</html>
