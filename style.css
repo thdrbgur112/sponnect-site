@@ -90,7 +90,7 @@ p { margin: 0; }
 .btn:hover { transform: translateY(-1px); }
 
 /* hero */
-.hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; padding-block: 48px 64px; }
+.hero { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; padding-block: 48px 64px; }
 .hero > * { min-width: 0; }
 .hero .lede { margin-bottom: 28px; }
 .livery { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 20px; margin: 0; }
