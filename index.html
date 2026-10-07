@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<div class="checker" aria-hidden="true"></div>
+<a class="announce" href="team-list.html"><span class="dot" aria-hidden="true"></span>ICRA 2027 서울 RoboRacer · 2027.5.24–28 · 시즌 파트너 모집 중 <span class="arrow">→</span></a>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="index.html">Spon<span>nect</span></a>
@@ -30,59 +30,108 @@
       <a href="faq.html">FAQ</a>
       <a href="contact.html">문의</a>
     </nav>
+    <form class="search" action="team-list.html" role="search">
+      <input type="search" id="site-q" name="q" placeholder="팀 · 학교 · 분야 검색" aria-label="팀 검색">
+      <button type="submit">검색</button>
+    </form>
   </header>
 
-  <div class="hero">
-    <div>
-      <div class="eyebrow">대학 공학동아리&소모임 × 기업 스폰서십</div>
-      <h1>학생들의 꿈에<br>당신의 <em>이름</em>을 싣습니다</h1>
-      <p class="lede">자율주행·로보틱스·AI 대학 팀과 기업을 연결합니다. 맞는 팀을 고르고, 제안서와 계약을 정리하고, 대회가 끝나면 무엇이 노출됐는지 성과 리포트로 돌려드립니다.</p>
-      <div class="ctas">
-        <a class="btn primary" href="companies.html">후원 기업 안내</a>
-        <a class="btn" href="students.html">동아리및 소모임 안내</a>
+  <div class="dash">
+    <a class="tile banner" href="companies.html">
+      <div class="banner-text">
+        <div class="eyebrow">대학 공학동아리&amp;소모임 × 기업 스폰서십</div>
+        <h1>학생들의 꿈에<br>당신의 <em>이름</em>을 싣습니다</h1>
+        <p>자율주행·로보틱스·AI 대학 팀과 기업을 연결하고, 대회가 끝나면 성과 리포트로 돌려드립니다.</p>
+        <span class="btn primary">후원 기업 안내 →</span>
       </div>
-    </div>
+      <svg class="banner-car" viewBox="0 0 420 220" aria-hidden="true">
+        <rect class="svg-tyre" x="78" y="22" width="56" height="26" rx="6"/>
+        <rect class="svg-tyre" x="78" y="172" width="56" height="26" rx="6"/>
+        <rect class="svg-tyre" x="290" y="22" width="56" height="26" rx="6"/>
+        <rect class="svg-tyre" x="290" y="172" width="56" height="26" rx="6"/>
+        <path class="svg-car" d="M40 80 Q40 58 62 58 L330 58 Q372 58 392 92 L398 110 L392 128 Q372 162 330 162 L62 162 Q40 162 40 140 Z"/>
+        <circle class="svg-sensor" cx="352" cy="110" r="11"/>
+        <rect class="svg-zone z-main" x="140" y="72" width="140" height="76" rx="4"/>
+        <rect class="svg-zone z-tech" x="296" y="80" width="40" height="60" rx="4"/>
+        <rect class="svg-zone z-campus" x="50" y="80" width="72" height="60" rx="4"/>
+      </svg>
+    </a>
 
+    <section class="tile">
+      <div class="tile-head"><h2>주목받는 팀</h2><a href="team-list.html">전체 보기</a></div>
+      <ol class="rank">
+        <li><span class="no">1</span><div><strong>AID</strong><small>숭실대학교 · AI 자율주행</small></div><span class="badge win">IFAC 2026 우승</span></li>
+        <li><span class="no">2</span><div><strong>SSARA</strong><small>숭실대학교 · 전기 포뮬러</small></div><span class="badge">KSAE 기술상</span></li>
+        <li class="empty"><span class="no">3</span><div><strong>표시권 판매 중</strong><small>최상단 노출 자리</small></div><a class="badge open" href="contact.html">문의</a></li>
+        <li class="empty"><span class="no">4</span><div><strong>표시권 판매 중</strong><small>최상단 노출 자리</small></div><a class="badge open" href="contact.html">문의</a></li>
+      </ol>
+    </section>
+
+    <section class="tile">
+      <div class="tile-head"><h2>대회 일정</h2></div>
+      <ul class="events">
+        <li class="next">
+          <span class="when"><b id="dday">D-</b>2027.5.24–28</span>
+          <strong>ICRA 2027 RoboRacer</strong>
+          <small>서울 COEX · 세계 최대 로봇 학회</small>
+        </li>
+        <li>
+          <span class="when">2026.9 · 결과</span>
+          <strong>IFAC 2026 RoboRacer</strong>
+          <small>AID 우승 · 52팀</small>
+        </li>
+        <li>
+          <span class="when">2026.8 · 결과</span>
+          <strong>KSAE 자작자동차대회</strong>
+          <small>SSARA 최우수 기술아이디어상</small>
+        </li>
+      </ul>
+    </section>
   </div>
 
-  <section>
-    <div class="eyebrow">진행 순서</div>
-    <h2>한 시즌의 흐름</h2>
-    <ol class="steps">
-      <li><strong>팀 확인</strong><span>대회 성과, 기술 스택, 필요한 장비</span></li>
-      <li><strong>기업 매칭</strong><span>제품과 채용 분야가 맞는 기업 선별</span></li>
-      <li><strong>제안·계약</strong><span>패키지와 약속 사항 확정</span></li>
-      <li><strong>대회·콘텐츠</strong><span>로고 부착, 튜토리얼 공개, 세미나</span></li>
-      <li><strong>성과 리포트</strong><span>노출 결과 정리, 다음 시즌 논의</span></li>
-    </ol>
-  </section>
+  <a class="promo" href="students.html">
+    <span><b>동아리·소모임은 첫 등록 이후 무료</b>로 후원 연결을 받습니다.</span>
+    <span class="promo-go">팀 등록하기 →</span>
+  </a>
 
-  <section>
-    <div class="eyebrow">더 알아보기</div>
-    <h2>어디서 시작할까요</h2>
-    <div class="teasers">
-      <a class="teaser" href="faq.html">
-        <strong>FAQ</strong>
-        <span>비용, 현물 후원, 성과 확인 방법</span>
-        <span class="go">질문 보기 →</span>
-      </a>
-      <a class="teaser" href="companies.html">
-        <strong>후원 패키지</strong>
-        <span>Main, Tech, Campus</span>
-        <span class="go">패키지 보기 →</span>
-      </a>
-      <a class="teaser" href="students.html">
-        <strong>팀 등록</strong>
-        <span>학생들은 첫 등록이후 무료로 후원 연결을 받습니다</span>
-        <span class="go">참여 방법 →</span>
-      </a>
-    </div>
-  </section>
+  <div class="dash">
+    <section class="tile">
+      <div class="tile-head"><h2>후원 패키지</h2><a href="companies.html">자세히</a></div>
+      <ul class="pkg-mini">
+        <li><span class="sw main"></span><strong>Main</strong><small>현금 300만 원부터 · 차량 메인 로고</small></li>
+        <li><span class="sw tech"></span><strong>Tech</strong><small>장비·서버 크레딧 현물 · 튜토리얼 공개</small></li>
+        <li><span class="sw campus"></span><strong>Campus</strong><small>~300만 원 · 세미나·직무 소개</small></li>
+      </ul>
+    </section>
+
+    <section class="tile">
+      <div class="tile-head"><h2>팀을 찾는 기업</h2><a href="company-list.html">전체 보기</a></div>
+      <ol class="rank">
+        <li class="empty"><span class="no">1</span><div><strong>Slot 01</strong><small>최상단 표시권</small></div><a class="badge open" href="contact.html">문의</a></li>
+        <li class="empty"><span class="no">2</span><div><strong>Slot 02</strong><small>차상단 표시권</small></div><a class="badge open" href="contact.html">문의</a></li>
+        <li class="empty"><span class="no">3</span><div><strong>Slot 03</strong><small>차상단 표시권</small></div><a class="badge open" href="contact.html">문의</a></li>
+      </ol>
+    </section>
+
+    <section class="tile">
+      <div class="tile-head"><h2>한 시즌의 흐름</h2></div>
+      <ol class="flow">
+        <li><b>팀 확인</b> 대회 성과, 필요한 장비</li>
+        <li><b>기업 매칭</b> 제품·채용 분야가 맞는 기업</li>
+        <li><b>제안·계약</b> 패키지와 약속 확정</li>
+        <li><b>대회·콘텐츠</b> 로고, 튜토리얼, 세미나</li>
+        <li><b>성과 리포트</b> 노출 결과와 다음 시즌</li>
+      </ol>
+    </section>
+  </div>
 
   <footer>
     <span>© 2026 Sponnect · Seoul</span>
     <span>sponconnect@gmail.com</span>
   </footer>
 </div>
+<script>
+(function(){var d=Math.ceil((new Date(2027,4,24)-new Date())/864e5);var el=document.getElementById("dday");if(el)el.textContent=d>0?"D-"+d+" · ":"";})();
+</script>
 </body>
 </html>
